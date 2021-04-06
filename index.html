@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>My Random Choice Picker</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="main-title">Welcome To Anzcyent's Random Choice Picker App</h1>
+
+        <h4 class="title">
+            Write your words and split them by using comma <span style="color:rgba(255, 255, 255, 0.781)">(' , ')</span>
+            .
+        </h4>
+
+        <input id="textarea" placeholder="Write your words and press enter..." autocomplete="off"></input>
+
+        <div class="tags">
+            <h5 class="title">Your words will be shown up here...</h5>
+            <!-- <span class="tag">Deneme</span>
+            <span class="tag">Deneme</span>
+            <span class="tag">Deneme</span>
+            <span class="tag">Deneme</span>
+            <span class="tag">Deneme</span>
+            <span class="tag">Deneme</span> -->
+
+        </div>
+
+        <div class="form-group">
+            <label for="setTime">Set Choosing Time</label>
+            <select id="setTime">
+                <option value="1">1 second</option>
+                <option value="2">2 seconds</option>
+                <option value="3" selected>3 seconds</option>
+                <option value="4">4 seconds</option>
+                <option value="5">5 seconds</option>
+                <option value="10">10 seconds</option>
+            </select>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
