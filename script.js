@@ -71,6 +71,8 @@ function randomSelect() {
                         randomTag.nextElementSibling.remove();
                     }
                 }, 1000);
+                
+                createAlert(randomTag);
             }, 100);
 
         }, 10000);
@@ -93,6 +95,8 @@ function randomSelect() {
                     while (randomTag.nextElementSibling !== null) {
                         randomTag.nextElementSibling.remove();
                     }
+                    
+                    createAlert(randomTag);
                 }, 1000);
 
 
@@ -117,3 +121,12 @@ function unHighlight(tag) {
     tag.classList.remove('highlight');
 }
 
+function createAlert(x) {
+    const span = document.createElement('span');
+    span.textContent = `${x.textContent} is the lucky one.`
+    smallArea.appendChild(span);
+
+    setTimeout(() => {
+        span.remove();
+    },2500)
+}
